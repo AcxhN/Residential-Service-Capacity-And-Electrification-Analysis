@@ -8,7 +8,7 @@ The study simulates consulting workflow by combining:
 
 - Electrical load calculations (Excel)
 - BIM spatial modeling (Revit)
-- Technical documentation drafting (AutoCAD)
+- ~~Technical documentation drafting (AutoCAD)~~
 
 ## Objective
 
@@ -28,6 +28,6 @@ Answer the core engineering question:
 
 - Excel (load calculations)
 - Revit (electrical layout + panel workflow)
-- AutoCAD (single-line diagrams)
+- ~~AutoCAD (single-line diagrams)~~ 
 - Git (version control + documentation)
 
