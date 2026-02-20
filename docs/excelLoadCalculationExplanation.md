@@ -6,9 +6,9 @@ This `.xlsx` file represents the engineering logic that answers:
 
 “What is the electrical demand (in amps) of a typical house before and after electrification?”
 
-We are converting the electrical demand of loads (in Watts) into an equivalent current (in amps), and comparing that to a 100 A electrical service.
+We are converting the electrical demand of loads (in Watts) into an equivalent current (in amps), and comparing that to a 100 A electrical service
 
-According to the Canadian Electrical Code, we are not supposed to simply add up all connected load. We must apply demand factors to reflect realistic usage.
+According to the Canadian Electrical Code, we are not supposed to simply add up all connected load. We must apply demand factors to reflect realistic usage
 
 ---
 
@@ -29,8 +29,8 @@ According to the Canadian Electrical Code, we are not supposed to simply add up 
 | Heat pump (later)        | 5000 W               | Jackery website              |
 | Heat pump water heater   | 3000 W               | Typical residential rating   |
 
-The sum of these gives the total connected power in Watts.  
-It represents the maximum possible draw if everything runs at once.
+The sum of these gives the total connected power in Watts  
+It represents the maximum possible draw if everything runs at once
 
 ---
 
@@ -55,23 +55,23 @@ Home Depot states:
 “If the house has two small appliance circuits and a laundry circuit, that makes 4,500 watts.”
 
 ### Electric Range
-Used upper-bound value for larger electric stove wattage (12,000 W).
+Used upper-bound value for larger electric stove wattage (12,000 W)
 
 ### Dryer
 “Dryers use around 1,800 – 5,000 watts, with 3,000 being the average.”  
-Upper bound (5000 W) selected.
+Upper bound (5000 W) selected
 
 ### Air Conditioner
 “A full-sized central system could draw over 3,500 watts depending on efficiency ratings.”
 
 ### Heat Pump
-5-ton heat pump ≈ 5000 W input assumption.
+5-ton heat pump ≈ 5000 W input assumption
 
 ---
 
 ## Part 2 – Demand Factor (Reduction Factor)
 
-Realistically, not all circuits run simultaneously at full power.
+Realistically, not all circuits run simultaneously at full power
 
 We apply code-required adjustments (demand factors).  
 This produces the calculated load, which engineers use to size:
@@ -107,8 +107,21 @@ After calculating adjusted demand load in watts:
 
 Amps = Demand (W) / System Voltage (V)
 
-Residential in Canada is 240V split phase:
+calculated demand current = 78.7 A, this is less than the 100A service rating 
 
-I = W / 240
+### Engineering Conclusion
 
-This gives the calculated service demand in amps
+Under the simplified residential demand method:
+
+- A **100 A service is technically adequate** for the modeled electrified house  
+- However, the margin is limited  
+
+Given future electrification trends such as:
+
+- Electric vehicle charging  
+- Additional electric heating  
+- Simultaneous high-load appliance use  
+
+A **200 A service upgrade is recommended for long-term electrification readiness**
+
+This Excel analysis forms the baseline engineering justification that is later cross-checked in the Revit model

@@ -1,8 +1,8 @@
-# 100A to Net-Zero: Residential Service Capacity Assessment
+# Residential Service Capacity Assessment
 
 ## Project Overview
 
-This project evaluates whether a typical 100A two-storey Canadian residential home can transition toward electrification and partial net-zero operation without requiring a service upgrade
+This project evaluates whether a typical 100A residential home can transition toward electrification and partial net-zero operation without requiring a service upgrade
 
 The study simulates consulting workflow by combining:
 
