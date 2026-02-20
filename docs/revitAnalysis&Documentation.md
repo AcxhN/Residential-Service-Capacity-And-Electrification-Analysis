@@ -3,7 +3,7 @@
 ## Project Purpose 
 
 The goal of the Revit file is not to build architecture, instead it's to place major electrical equipment in a architecture file and generate a panel schedule 
-
+https://libraryrevit.com/rvt/single-story-house-plan/ 
 ---
 
 ## Documentation of workflow
